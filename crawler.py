@@ -44,6 +44,7 @@ def create_data_frame(soup, device_model):
     smartphones_formatted_data = list(map(data_parser, smartphones_raw_data))
 
     return pandas.DataFrame(smartphones_formatted_data)
+
 # Treating IncompleteRead errors when requesting
 # This is a zoom server problem so we need this workaround to keep using zoom
 # Not necessary if using other sites.
